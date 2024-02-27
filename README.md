@@ -4,14 +4,17 @@ A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicat
 
 ## How it was created
 
-1. a blank codespace was created from a blank repository. The following are installed by default:
+### Step 1
+
+A blank codespace was created from a blank repository. The following are installed by default:
 
   -  PHP
   -  Node.js (via nvm), yarn and pnpm
 
 There are other things installed by default, see the full list here: https://aka.ms/ghcs-default-image 
 
-2. the following plugins were installed to the devcontainer.json via bottom left "Codespaces" button, then "Add Dev Container Configuration files" > "Modify your current configuration" then searching for the following packages and ensuring the boc on the left is ticked:
+### Step 2
+the following plugins were installed to the devcontainer.json via bottom left "Codespaces" button, then "Add Dev Container Configuration files" > "Modify your current configuration" then searching for the following packages and ensuring the boc on the left is ticked:
 
   - Composer (via Github Releases) - from devcontainers-contrib
   - Lighthouse CLI (via npm) - from devcontainers-contrib
@@ -20,19 +23,23 @@ I also tried installying this, but threw errors:
 
   - MySQL (via Homebrew)
 
-3. Click on rebuild once it pops up. Your codespace will be recreated and install these packages. This will take some time, but you can click on the "View Log" link to view what is happening in the background.
+### Step 3
+Click on rebuild once it pops up. Your codespace will be recreated and install these packages. This will take some time, but you can click on the "View Log" link to view what is happening in the background.
 
-4. Your codespace should restart.
+### Step 4
+Your codespace should restart.
 
 All commands in `this font` to be run in the **terminal**.
 
-5. Run 
+### Step 5
+Run 
 
 `composer -v` 
 
 to check that you are running composer and that it was successfully installed. You should be getting the composer logo and some usage commands.
 
-6. If so, run the following command to install **Smarty**
+### Step 6
+If so, run the following command to install **Smarty**
 
 `composer require smarty/smarty`
 
@@ -42,15 +49,18 @@ You should now see some additional files added (vendor folder, composer.json, co
 
 Commit and push your changes to the repository.
 
-7. Check that Yarn is installed
+### Step 7
+Check that Yarn is installed
 
 `yarn -version`
 
-8. Update **npm**
+### Step 8
+Update **npm**
 
 `npm install -g npm@10.4.0`
 
-9. Install **Bootstrap**
+### Step 9
+Install **Bootstrap**
 
 `composer require twbs/bootstrap:5.3.3`
 
@@ -76,7 +86,8 @@ Alternatively, you can install a plugin that previews the webpage from within Co
 
 You should now be able to preview some elements of the nav bar
 
-10. Install **Glide.js** to create a cool slider at the top of the website.
+### Step 10
+Install **Glide.js** to create a cool slider at the top of the website.
 
 `npm install @glidejs/glide`
 
