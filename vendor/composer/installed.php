@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e6a793f51f0f1dddfe1847b06f240e59dbb37f92',
+        'reference' => '7ccef2042297a4dd43705be8cb2ba79b398c40d5',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e6a793f51f0f1dddfe1847b06f240e59dbb37f92',
+            'reference' => '7ccef2042297a4dd43705be8cb2ba79b398c40d5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -27,6 +27,21 @@
             'install_path' => __DIR__ . '/../smarty/smarty',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'twbs/bootstrap' => array(
+            'pretty_version' => 'v5.3.3',
+            'version' => '5.3.3.0',
+            'reference' => '6e1f75f420f68e1d52733b8e407fc7c3766c9dba',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../twbs/bootstrap',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'twitter/bootstrap' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => 'v5.3.3',
+            ),
         ),
     ),
 );
