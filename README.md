@@ -9,7 +9,7 @@ A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicat
   -  PHP
   -  Node.js (via nvm), yarn and pnpm
 
-See the full list here: https://aka.ms/ghcs-default-image 
+There are other things installed by default, see the full list here: https://aka.ms/ghcs-default-image 
 
 2. the following plugins were installed to the devcontainer.json via bottom left "Codespaces" button, then "Add Dev Container Configuration files" > "Modify your current configuration" then searching for the following packages and ensuring the boc on the left is ticked:
 
