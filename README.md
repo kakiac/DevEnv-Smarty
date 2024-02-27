@@ -24,6 +24,8 @@ I also tried installying this, but threw errors:
 
 4. Your codespace should restart.
 
+All commands in `this font` to be run in the **terminal**.
+
 5. Run 
 
 `composer -v` 
@@ -71,3 +73,16 @@ A pop up will show, with information about your application running on local por
 You should now see the webpage previewed.
 
 Alternatively, you can install a plugin that previews the webpage from within Codespaces, see here for more info: https://stackoverflow.com/questions/74452866/how-preview-a-html-file-github-codespaces 
+
+You should now be able to preview some elements of the nav bar
+
+10. Install **Glide.js** to create a cool slider at the top of the website.
+
+`npm install @glidejs/glide`
+
+Or add it using yarn
+
+And follow the installation details (changing your css/html/scss) in this link https://yarnpkg.com/package?q=%40glidejs%2Fglide&name=%40glidejs%2Fglide 
+
+**Note**: if the server is running, you might need to interrupt it pressing Ctrl+C
+
