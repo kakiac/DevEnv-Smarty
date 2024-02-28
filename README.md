@@ -19,10 +19,10 @@ journey
       Yarn: 5: Worked
       npm Latest version: 5: Worked
     section Install via composer
-      Smarty (`composer require smarty/smarty`): 5: Worked
-      Bootstrap (`composer require twbs/bootstrap:5.3.3`): 5: Worked
+      Smarty: 5: Worked
+      Bootstrap: 5: Worked
     section Install via npm
-      Glide.js (`npm install @glidejs/glide`): 0: Testing
+      Glide.js: 0: Testing
 
 
       
