@@ -6,10 +6,26 @@ A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicat
 [^1]: *Note*: This diagramme will only preview on Github (ie via https://github.com/kakiac/DevEnv-Smarty). It was generated using Mermaid https://mermaid.js.org/intro/). Check out this blog https://www.drawio.com/blog/mermaid-diagrams for some templates.
 
 ```mermaid
-  sequenceDiagram
-    Built in on Codespaces->>Install first: Hello John, how are you?
-    Install first-->>Install via Composer: Great!
-    %% Alice-)John: See you later!
+journey
+    title Development Environment for Web Dev using TechStack A
+    section Out-of-the box
+      PHP: 5: Worked
+      Node.js (via `npm`): 5: Worked
+    section Install first via the Add Dev Container Configuration option
+      Composer: 5: Worked
+      Lighthouse CLI: 5: Worked
+      MySQL (via Homebrew): 2: Didn't work
+    Section Check that these exist
+      Yarn: 5: Worked
+      npm Latest version: 5: Worked
+    section Install via composer
+      Smarty (`composer require smarty/smarty`): 5: Worked
+      Bootstrap (`composer require twbs/bootstrap:5.3.3`): 5: Worked
+    section Install via npm
+      Glide.js (`npm install @glidejs/glide`): Testing
+
+
+      
 
 ```
 <p align="center">
