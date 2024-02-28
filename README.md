@@ -6,18 +6,15 @@ A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicat
 [^1]: *Note*: This diagramme will only preview on Github (ie via https://github.com/kakiac/DevEnv-Smarty). It was generated using Mermaid https://mermaid.js.org/intro/). Check out this blog https://www.drawio.com/blog/mermaid-diagrams for some templates.
 
 ```mermaid
-  sequenceDiagram 
-    autonumber
-    Student->>Admin: Can I enrol this semester?
-    loop enrolmentCheck
-        Admin->>Admin: Check previous results
-    end
-    Note right of Admin: Exam results may <br> be delayed
-    Admin-->>Student: Enrolment success
-    Admin->>Professor: Assign student to tutor
-    Professor-->>Admin: Student is assigned
+  sequenceDiagram
+    Built in on Codespaces->>Install first: Hello John, how are you?
+    Install first-->>Install via Composer: Great!
+    %% Alice-)John: See you later!
+
 ```
+<p align="center">
 Development Environment for Web Dev using TechStack A
+</p>
 
 ## How it was created
 
