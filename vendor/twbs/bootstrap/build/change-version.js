@@ -2,26 +2,27 @@
 
 /*!
  * Script to update version number references in the project.
- * Copyright 2017-2024 The Bootstrap Authors
+ * Copyright 2017-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-import { execFile } from 'node:child_process'
-import fs from 'node:fs/promises'
-import process from 'node:process'
+'use strict'
+
+const fs = require('node:fs').promises
+const path = require('node:path')
+const globby = require('globby')
 
 const VERBOSE = process.argv.includes('--verbose')
 const DRY_RUN = process.argv.includes('--dry') || process.argv.includes('--dry-run')
 
-// These are the files we only care about replacing the version
-const FILES = [
-  'README.md',
-  'hugo.yml',
-  'js/src/base-component.js',
-  'package.js',
-  'scss/mixins/_banner.scss',
-  'site/data/docs-versions.yml'
+// These are the filetypes we only care about replacing the version
+const GLOB = [
+  '**/*.{css,html,js,json,md,scss,txt,yml}'
 ]
+const GLOBBY_OPTIONS = {
+  cwd: path.join(__dirname, '..'),
+  gitignore: true
+}
 
 // Blame TC39... https://github.com/benjamingr/RegExp.escape/issues/37
 function regExpQuote(string) {
@@ -52,7 +53,7 @@ async function replaceRecursively(file, oldVersion, newVersion) {
   }
 
   if (VERBOSE) {
-    console.log(`Found ${oldVersion} in ${file}`)
+    console.log(`FILE: ${file}`)
   }
 
   if (DRY_RUN) {
@@ -60,19 +61,6 @@ async function replaceRecursively(file, oldVersion, newVersion) {
   }
 
   await fs.writeFile(file, newString, 'utf8')
-}
-
-function bumpNpmVersion(newVersion) {
-  if (DRY_RUN) {
-    return
-  }
-
-  execFile('npm', ['version', newVersion, '--no-git-tag'], { shell: true }, error => {
-    if (error) {
-      console.error(error)
-      process.exit(1)
-    }
-  })
 }
 
 function showUsage(args) {
@@ -98,11 +86,11 @@ async function main(args) {
     showUsage(args)
   }
 
-  bumpNpmVersion(newVersion)
-
   try {
+    const files = await globby(GLOB, GLOBBY_OPTIONS)
+
     await Promise.all(
-      FILES.map(file => replaceRecursively(file, oldVersion, newVersion))
+      files.map(file => replaceRecursively(file, oldVersion, newVersion))
     )
   } catch (error) {
     console.error(error)

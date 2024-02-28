@@ -1,11 +1,6 @@
-import fs from 'node:fs/promises'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+'use strict'
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-
-const pkgJson = path.join(__dirname, '../package.json')
-const pkg = JSON.parse(await fs.readFile(pkgJson, 'utf8'))
+const pkg = require('../package.json')
 
 const year = new Date().getFullYear()
 
@@ -17,4 +12,4 @@ function getBanner(pluginFilename) {
   */`
 }
 
-export default getBanner
+module.exports = getBanner
