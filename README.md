@@ -2,6 +2,24 @@
 
 A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicating the environment that you were given at the Introduction to Web Development module.
 
+## Overview of the process
+
+```mermaid
+  graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 ## How it was created
 
 ### Step 1
