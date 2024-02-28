@@ -11,7 +11,6 @@ journey
     section Out-of-the box
       PHP: 5: Worked
       Node.js (via `npm`): 5: Worked
-      Github CLI: 5: Worked
     section Install first via the Add Dev Container Configuration option
       Composer: 5: Worked
       Lighthouse CLI: 5: Worked
@@ -39,9 +38,8 @@ Development Environment for Web Dev using TechStack A
 
 A blank codespace was created from a blank repository. The following are installed by default:
 
-  -  PHP version 8.2.13
-  -  Node.js (via nvm), yarn and pnpm (npm version 10.4.0)
-  -  GitHub CLI (allows for git commands via the terminal)
+  -  PHP
+  -  Node.js (via nvm), yarn and pnpm
 
 There are other things installed by default, see the full list here: https://aka.ms/ghcs-default-image 
 
@@ -118,7 +116,7 @@ Alternatively, you can install a plugin that previews the webpage from within Co
 
 You should now be able to preview some elements of the nav bar
 
-### Step 10 (Testing)
+### Step 10
 Install **Glide.js** to create a cool slider at the top of the website.
 
 `npm install @glidejs/glide`
@@ -129,11 +127,3 @@ And follow the installation details (changing your css/html/scss) in this link h
 
 **Note**: if the server is running, you might need to interrupt it pressing Ctrl+C
 
-### Step 11. Set up PHP (Testing)
-
-Follow the instructions from this page: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-php-project-for-codespaces
-
-
-
-
-### Step 12. Set up Database
