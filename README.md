@@ -22,7 +22,7 @@ journey
       Smarty (`composer require smarty/smarty`): 5: Worked
       Bootstrap (`composer require twbs/bootstrap:5.3.3`): 5: Worked
     section Install via npm
-      Glide.js (`npm install @glidejs/glide`): Testing
+      Glide.js (`npm install @glidejs/glide`): 0: Testing
 
 
       
