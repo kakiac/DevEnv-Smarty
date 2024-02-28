@@ -2,8 +2,8 @@
 
 A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicating the environment that you were given at the Introduction to Web Development module.
 
-## Overview of the process
-*Note*: This diagramme will only preview on Github (ie via https://github.com/kakiac/DevEnv-Smarty)
+## Overview of the process[^1]
+[^1]*Note*: This diagramme will only preview on Github (ie via https://github.com/kakiac/DevEnv-Smarty). It was generated using Mermaid https://mermaid.js.org/intro/). Check out this blog https://www.drawio.com/blog/mermaid-diagrams for some templates.
 
 ```mermaid
   sequenceDiagram 
