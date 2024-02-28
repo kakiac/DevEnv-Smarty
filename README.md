@@ -3,22 +3,22 @@
 A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicating the environment that you were given at the Introduction to Web Development module.
 
 ## Overview of the process
+*Note*: This diagramme will only preview on Github (ie via https://github.com/kakiac/DevEnv-Smarty)
 
 ```mermaid
-  graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
+  graph Development Environment for Web Dev using TechStack A;
+  sequenceDiagram
+    autonumber
+    Student->>Admin: Can I enrol this semester?
+    loop enrolmentCheck
+        Admin->>Admin: Check previous results
+    end
+    Note right of Admin: Exam results may <br> be delayed
+    Admin-->>Student: Enrolment success
+    Admin->>Professor: Assign student to tutor
+    Professor-->>Admin: Student is assigned
 ```
 
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
 
 ## How it was created
 
