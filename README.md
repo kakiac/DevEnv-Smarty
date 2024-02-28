@@ -6,7 +6,7 @@ A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicat
 *Note*: This diagramme will only preview on Github (ie via https://github.com/kakiac/DevEnv-Smarty)
 
 ```mermaid
-  sequenceDiagram Development Environment for Web Dev using TechStack A;
+  sequenceDiagram 
     autonumber
     Student->>Admin: Can I enrol this semester?
     loop enrolmentCheck
@@ -17,7 +17,7 @@ A GitHub Codespaces **Dev**eloper **Env**ironment as a service (DEaaS), replicat
     Admin->>Professor: Assign student to tutor
     Professor-->>Admin: Student is assigned
 ```
-
+Development Environment for Web Dev using TechStack A
 
 ## How it was created
 
